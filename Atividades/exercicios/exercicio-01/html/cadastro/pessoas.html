@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de pessoas</title>
+</head>
+<body>
+    <h1>Dados da pessoa</h1>
+
+    <!--action para quem vai enviar os dados; method como vai ser enviado-->
+    <form action="/pessoas/cadastrar" method="post">
+        <div>
+            <label for="nome">Nome: </label>
+            <!-- 'label' nome para o 'input', 'for' é o que vincula as informações do 'input' com o mesmo nome do 'id'-->
+            <input type="text" name="nomeDaPessoa" id="nome" placeholder="Informe o nome da pessoa" required>
+        </div>
+
+        <div>
+            <label for="senha">Senha: </label>
+            <input type="password" name="senha" id="senha">
+        </div>
+
+        <p></p>
+        <label">Gênero</label>
+
+        <!--usar o mesmo 'name' para uma só opção; 'radio' é o tipo de escolha; 'value' recebe o valor do 'radio'        -->
+        <div>
+            <input type="radio" name="genero" id="feminino" value="FEM">
+            <label for="feminino">Feminino</label>
+        </div>
+
+        <div>
+            <input type="radio" name="genero" id="masculino" value="MAS">
+            <label for="masculino">Masculino</label>
+        </div>
+
+        <div>
+            <input type="radio" name="genero" id="naoBinario" value="NB">
+            <label for="naoBinario">Não binário</label>
+        </div>
+
+        <div>
+            <input type="radio" name="genero" id="semresposta" value="SR">
+            <label for="semresposta">Prefiro não responder</label>
+        </div>
+
+        <p> </p>
+        <label">Notificações</label>
+
+        <!-- 'notificacao[]' é um array para saber qual campo foi marcado-->
+        <div>
+            <input type="checkbox" id="email" name="notificacao[0]">
+            <label for="email">Receber Notificações por e-mail</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="whatsapp" name="notificacao[1]">
+            <label for="whatsapp">Receber Notificações por WhatsApp</label>
+        </div>
+
+        <p></p>
+
+        <div>
+            <label for="uf">Estado</label>
+            <select name="estado" id="uf">
+
+                <!-- o "estado" do select recebe o valor selecionado-->
+                <option value="0" selected disabled>Selecione:</option>
+                <option value="1">Minas Gerais</option>
+                <option value="2">São Paulo</option>
+                <option value="3">Maranhão</option>
+                <option value="4">Bahia</option>
+
+            </select>
+        </div>
+
+        <p></p>
+        <div>
+            <label for="perfil">Cor padrão do perfil:</label>
+            <input type="color" name="perfil" id="perfil">
+        </div>
+
+        <p></p>
+        <div>
+            <label for="">Data de nascimento:</label>
+            <input type="date" name="nascimento" id="nascimento">
+        </div>
+        
+        <p></p>
+        <div>
+            <label for="pontuacao">Pontuação</label>
+            <input type="range" name="pontuacao" id="pontuacao" min="0" max="100" step="10" value="80">
+        </div>
+
+        <p></p>
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <p></p>
+        <input type="submit" value="Enviar - input">
+
+        <input type="reset" value="Limpar">
+
+        <button type="submit">Enviar - button</button>
+
+    </form>
+
+    <a href="../index.html">Voltar</a>
+
+</body>
+</html>

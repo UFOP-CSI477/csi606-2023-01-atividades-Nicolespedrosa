@@ -1,0 +1,119 @@
+<html>
+
+    <head>
+        <title>Introdução ao HTML</title>
+
+    </head>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Pangolin&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* comentário */
+        /* classe genérica*/
+        .borda{
+            border: 1px solid #000;
+            margin: 0.5rem;
+            padding: 1rem;
+        }
+
+        /*pseudo-class :hover no elemento 'a'*/
+        a:hover{
+            background-color: cornflowerblue;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: #c23f4a;
+        }
+
+        p::first-line{
+            color: #0672a2;
+            text-decoration: underline;
+            
+        }
+
+        /* p é filho do footer*/
+        footer > p {
+            background-color: #c6c6c6;
+            text-align: center;
+            padding: 0.5rem;
+        }
+
+        /*mesmo nível hierarquico */
+        h2 + p{
+            background-color: #3ce61a;
+        }
+
+        h1, h2, h3{
+            font-family: 'Josefin Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+    </style>
+
+    <body>
+
+        <!-- comentário -->
+        <h1 style="color: #c23f4a; font-size: 3rem; font-family: Arial, Helvetica, sans-serif;">Sistema Web</h1>
+        
+
+        <article>
+            <header>###</header>
+            <section>
+                <h2>Sistemas Web I</h2>
+
+
+                <p class="borda"><em>Introdução ao HTML</em> e suas características principais.</p>
+
+                <h3>Início do curso</h3>
+
+                <p class="borda"> Programa do <strong>curso</strong></p>
+            
+            </section>
+
+            <section>
+                <h2>Definição do ambiente</h2>
+            </section>
+
+            <footer>
+                <p>Semestre 2023/1</p>
+            </footer>
+        </article>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas cupiditate laboriosam voluptatum alias 
+            odit id sequi quasi expedita, iste hic sed assumenda natus veritatis molestiae deleniti!
+            Quidem nostrum voluptatem earum.</p>
+
+    
+
+        <div class="borda" id="links">
+            <!-- <span></span> para ícones-->
+            <a href="#"><span>Sobre</span></a>
+            <a href="./cadastro/pessoas.html">Cadastro</a>
+            <a href="./relatorio/pessoas.html">Relatório</a>
+            <a href="https://www.ufop.br" target="_blank">Site da Ufop</a>
+        </div>
+            <!-- site unsplash com imagens livres-->
+        <div id="imagens">
+            <img src="https://static.todamateria.com.br/upload/so/ln/solnocentro.jpg" alt="Imagem do sol">
+
+            <img src="logo.png" alt="Apresenta a marca da empresa">
+        </div>
+        
+        
+
+        <footer>
+            <p>Desenvolvido com S2</p>
+        </footer>
+        
+    </body>
+
+</html>

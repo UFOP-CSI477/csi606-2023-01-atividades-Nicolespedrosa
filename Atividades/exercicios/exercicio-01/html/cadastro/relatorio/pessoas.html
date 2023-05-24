@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de pessoas</title>
+</head>
+<body>
+
+    <table border="1">
+
+        <thead>
+            <tr> <!--criando celulas, cada célula é uma coluna-->
+                <th>Código</th>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Turma</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ana</td>
+                <td>ana@web.com.br</td>
+                <td rowspan="8">11</td> <!--mesclar a 4a coluna em 8 linhas-->
+            </tr><tr>
+                <td>1</td>
+                <td>Ana</td>
+                <td>ana@web.com.br</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Ana</td>
+                <td>ana@web.com.br</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Ana</td>
+                <td>ana@web.com.br</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr style="text-align: center;"> <!--codigo CSS-->
+
+                <!--colspan é mesclar quantidade de células-->
+                <td colspan="2">Quantidade</td>
+                <td colspan="2">5 pessoas</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    
+    <a href="../index.html">Voltar</a>
+</body>
+</html>

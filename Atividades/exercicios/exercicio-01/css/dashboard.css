@@ -1,0 +1,9 @@
+ul{
+    list-style-type: none;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
