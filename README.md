@@ -3,11 +3,11 @@
 
 ## Atualize os seus dados
 
-- Nome:
-- Matrícula:
-- Curso:
-- Semestre/Ano correntes:
-- Link para o seu GitHub:
+- Nome: Nicole da Silva Pedrosa
+- Matrícula: 16.2.8387
+- Curso: Sistemas de Informação 
+- Semestre/Ano correntes: 7/8º período
+- Link para o seu GitHub: https://github.com/Nicolespedrosa
 
 ## [Projeto final:](./Projeto/README.md)
 
