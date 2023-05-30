@@ -1,6 +1,6 @@
 # **CSI606-2021-02 - Remoto - Proposta de Trabalho Final**
 
-## *Aluna(o): Princesa Leia (Luke Skywalker)*
+## *Aluna(o): Nicole da Silva Pedrosa*
 
 --------------
 
@@ -9,11 +9,14 @@
 ### Resumo
 
   (Apresentar um breve resumo sobre o seu trabalho, indicando o contexto e as principais funcionalidades.)
+  O sistema de livraria online proporciona ao usuário um catálogo de livros sem a necessidade de sair de casa. Um dos pontos principais desse tipo de sistema é proporcionar comodidade ao cliente, onde ele possa pesquisar por diversos livros e receber o produto no conforto de sua casa.
+  As principais funcionalidades são a busca pelo título ou autor do livro, exibição de detalhes e preços, além de um carrinho de compras para visualizar quais os livros escolhidos e finalizar a compra.
+
 
 <!-- Apresentar o tema. -->
 ### 1. Tema
 
-  O trabalho final tem como tema o desenvolvimento de ...
+  O trabalho final tem como tema o desenvolvimento de um sistema de livraria online.
 
 <!-- Descrever e limitar o escopo da aplicação. -->
 ### 2. Escopo
