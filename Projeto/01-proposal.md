@@ -20,17 +20,43 @@
 <!-- Descrever e limitar o escopo da aplicação. -->
 ### 2. Escopo
 
-  Este projeto terá as seguintes funcionalidades...
+  Este projeto terá as seguintes funcionalidades:
+
+      - Buscar livros por título;
+      - Fazer cadastro e login;
+      - Ver descrição de cada título;
+      - Adicionar item no carrinho de compras;
+      - Finalizar compra.
+  
 
 <!-- Apresentar restrições de funcionalidades e de escopo. -->
 ### 3. Restrições
 
-  Neste trabalho não serão considerados ...
+  Neste trabalho não serão considerados:
+      - Títulos com escrita errada;
+      - Finalizar compra com cartão de crédito;
+      ...
 
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
 ### 4. Protótipo
 
-  Protótipos para as páginas (descrever quais páginas) foram elaborados, e podem ser encontrados em...
+  Protótipos para as páginas: Homepage, busca, cadastro, login e carrinho de compras foram elaborados, e podem ser encontradas em:
+
+
+![Home Page: é a página inicial do site, onde encontramos os livros mais vendidos, novidades e recomendações.](Protótipo/P%C3%A1gina%20Inicial.jpg)
+
+
+![Procurar: retorna o resultado da busca feita pelo título do livro.](Protótipo/Busca.jpg)
+
+
+![Cadastrar: página para fazer o cadastro do usuário para finalizar a compra.](Protótipo/Cadastro.jpg)
+
+
+![Login: página que o usuário entra na sua conta para adicionar livros ao carrinho e fazer o pagamento.](Protótipo/Login.jpg)
+
+
+![Carrinho de Compras: onde o usuário encontra os produtos escolhidos e também o preço final para finalizar a compra.](Protótipo/Carrinho%20de%20Compras.jpg)
+
 
 ### 5. Referências
 

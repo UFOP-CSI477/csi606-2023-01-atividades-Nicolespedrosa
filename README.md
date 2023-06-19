@@ -11,4 +11,5 @@
 
 ## [Projeto final:](./Projeto/README.md)
 
-Apresente uma breve descrição do seu projeto.
+O sistema de livraria online proporciona ao usuário um catálogo de livros sem a necessidade de sair de casa. Um dos pontos principais desse tipo de sistema é proporcionar comodidade ao cliente, onde ele possa pesquisar por diversos livros e receber o produto no conforto de sua casa.
+As principais funcionalidades são a busca pelo título ou autor do livro, exibição de detalhes e preços, além de um carrinho de compras para visualizar quais os livros escolhidos e finalizar a compra.
