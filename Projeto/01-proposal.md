@@ -43,19 +43,19 @@
   Protótipos para as páginas: Homepage, busca, cadastro, login e carrinho de compras foram elaborados, e podem ser encontradas em:
 
 
-![Home Page: é a página inicial do site, onde encontramos os livros mais vendidos, novidades e recomendações.](Protótipo/P%C3%A1gina%20Inicial.jpg)
+[Home Page: é a página inicial do site, onde encontramos os livros mais vendidos, novidades e recomendações.](Protótipo/P%C3%A1gina%20Inicial.jpg)
 
 
-![Procurar: retorna o resultado da busca feita pelo título do livro.](Protótipo/Busca.jpg)
+[Procurar: retorna o resultado da busca feita pelo título do livro.](Protótipo/Busca.jpg)
 
 
-![Cadastrar: página para fazer o cadastro do usuário para finalizar a compra.](Protótipo/Cadastro.jpg)
+[Cadastrar: página para fazer o cadastro do usuário para finalizar a compra.](Protótipo/Cadastro.jpg)
 
 
-![Login: página que o usuário entra na sua conta para adicionar livros ao carrinho e fazer o pagamento.](Protótipo/Login.jpg)
+[Login: página que o usuário entra na sua conta para adicionar livros ao carrinho e fazer o pagamento.](Protótipo/Login.jpg)
 
 
-![Carrinho de Compras: onde o usuário encontra os produtos escolhidos e também o preço final para finalizar a compra.](Protótipo/Carrinho%20de%20Compras.jpg)
+[Carrinho de Compras: onde o usuário encontra os produtos escolhidos e também o preço final para finalizar a compra.](Protótipo/Carrinho%20de%20Compras.jpg)
 
 
 ### 5. Referências
