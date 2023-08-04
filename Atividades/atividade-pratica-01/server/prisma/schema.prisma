@@ -1,0 +1,103 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Estado {
+  // nome do campo; tipo; 
+  id    Int    @id @default(autoincrement())
+  nome  String
+  sigla String @unique
+
+  created_at DateTime @default(now())
+  updated_at DateTime @default(now())
+  Cidade     Cidade[]
+
+  @@map("estados")
+}
+
+model Cidade {
+  id   Int    @id @default(autoincrement())
+  nome String
+
+  estado_id Int
+
+  estado Estado @relation(fields: [estado_id], references: [id])
+
+  created_at DateTime   @default(now())
+  updated_at DateTime   @default(now())
+  Endereco   Endereco[]
+  usuarios      Usuario[]
+
+  @@map("cidades")
+}
+
+model Endereco {
+  id Int @id @default(autoincrement())
+
+  rua         String
+  numero      String
+  complemento String
+  bairro      String
+  telefone    String
+
+  cidade_id Int
+  cidade    Cidade @relation(fields: [cidade_id], references: [id])
+  compras Compras[]
+
+  created_at DateTime @default(now())
+  updated_at DateTime @default(now())
+
+  @@map("enderecos")
+}
+
+model Compras {
+  id         Int      @id @default(autoincrement())
+  usuario_id  Int      
+  endereco_id   Int
+  data       DateTime
+  created_at DateTime @default(now())
+  updated_at DateTime @default(now())
+
+  endereco Endereco @relation(fields: [endereco_id], references: [id])
+  usuario       Usuario       @relation(fields: [usuario_id], references: [id])
+  produto       Produto[]
+
+  @@map("compras")
+}
+
+model Produto {
+  id         Int      @id @default(autoincrement())
+  compra_id  Int
+  usuario_id Int
+  endereco_id Int
+  data       DateTime
+  created_at DateTime @default(now())
+  updated_at DateTime @default(now())
+
+  compras       Compras         @relation(fields: [compra_id], references: [id])
+
+  @@map("produtos")
+}
+
+model Usuario {
+  id          Int      @id @default(autoincrement())
+  nome        String
+  rua         String
+  bairro      String
+  cidade_id   Int            
+  created_at  DateTime @default(now())
+  updated_at  DateTime @default(now())
+
+  compras        Compras[]
+  cidade         Cidade        @relation(fields: [cidade_id], references: [id])
+
+  @@map("usuario")
+}
