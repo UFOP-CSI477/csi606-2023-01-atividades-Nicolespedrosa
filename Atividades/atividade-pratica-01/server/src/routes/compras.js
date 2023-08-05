@@ -19,9 +19,9 @@ comprasRouter.get('/compras/:id',getByIdComprasController.handle);
 
 comprasRouter.post('/compras',createComprasController.handle);
 
-comprasRouter.put('/compras',updateComprasController.handle);
+comprasRouter.put('/compras/:id',updateComprasController.handle);
 
-comprasRouter.delete('/compras',deleteComprasController.handle);
+comprasRouter.delete('/compras/:id',deleteComprasController.handle);
 
 
 export {comprasRouter}

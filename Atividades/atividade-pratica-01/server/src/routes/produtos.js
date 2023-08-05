@@ -21,9 +21,9 @@ produtoRouter.get('/produtos/:id',getByIdProdutosController.handle);
 produtoRouter.post('/produtos', createProdutosController.handle)
 
 //put
-produtoRouter.put('/produtos', updateProdutosController.handle)
+produtoRouter.put('/produtos/:id', updateProdutosController.handle)
 
 //delete
-produtoRouter.delete('/produtos',deleteProdutosController.handle);
+produtoRouter.delete('/produtos/:id',deleteProdutosController.handle);
 
 export {produtoRouter}

@@ -23,10 +23,10 @@ estadoRouter.get('/estados/:id', getByIdEstadoController.handle);
 estadoRouter.post('/estados', createEstadoController.handle);
 
 // Update
-estadoRouter.put('/estados', updateEstadoController.handle);
+estadoRouter.put('/estados/:id', updateEstadoController.handle);
 
 // Delete
-estadoRouter.put('/estados', deleteEstadoController.handle);
+estadoRouter.delete('/estados/:id', deleteEstadoController.handle);
 
 
 // Export -- Router

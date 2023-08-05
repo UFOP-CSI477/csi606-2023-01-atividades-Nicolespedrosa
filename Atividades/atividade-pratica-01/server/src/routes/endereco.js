@@ -18,8 +18,8 @@ enderecosRouter.get('/endereco/:id',getByIdEnderecoController.handle);
 //post
 enderecosRouter.post('/endereco',createEnderecoController.handle);
 //put
-enderecosRouter.put('/endereco',updateEnderecoController.handle);
+enderecosRouter.put('/endereco/:id',updateEnderecoController.handle);
 //delete
-enderecosRouter.delete('/endereco',deleteEnderecoController.handle);
+enderecosRouter.delete('/endereco/:id',deleteEnderecoController.handle);
 
 export {enderecosRouter}

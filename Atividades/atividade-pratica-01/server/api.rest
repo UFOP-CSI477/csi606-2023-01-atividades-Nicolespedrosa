@@ -10,16 +10,15 @@ POST http://localhost:5555/estados
 Content-Type: application/json
 
 {
-    "id": 5,
-    "nome": "Tocantins",
-    "sigla": "TO"
+    "nome": "Rio Grande do Sul",
+    "sigla": "RS"
 }
 
 ### Buscar os estados
 GET http://localhost:5555/estados
 
 ### Atualizar estado
-PUT http://localhost:5555/estados/1
+PUT http://localhost:5555/estados/7
 Content-Type: application/json
 
 {
@@ -28,7 +27,7 @@ Content-Type: application/json
 }
 
 ### Deletar estado
-DELETE http://localhost:5555/estados
+DELETE http://localhost:5555/estados/2
 Content-Type: application/json
 
 {
@@ -54,12 +53,14 @@ PUT http://localhost:5555/cidades/1
 Content-Type: application/json
 
 {
+  "id": 11,
   "nome": "Jundiaí",
-  "estado_id": 1
+  "estado_id": 1,
+  "sigla": "SP"
 }
 
-### Deletar cidade 1
-DELETE http://localhost:5555/cidades/1
+### Deletar cidade 10
+DELETE http://localhost:5555/cidades/10
 Content-Type: application/json
 
 
@@ -71,8 +72,9 @@ POST http://localhost:5555/produtos
 Content-Type: application/json
 
 {
+  "id": 1,
   "descricao": "Cafe",
-  "valor_unitario": 2.0
+  "valor_unitario": 2
 }
 
 ### Buscar os produtos
@@ -83,6 +85,7 @@ PUT http://localhost:5555/produtos/1
 Content-Type: application/json
 
 {
+  "id": 1,
   "descricao": "Café",
   "valor_unitario": 8.0
 }
@@ -133,7 +136,7 @@ Content-Type: application/json
 {
   "usuario_id": 1,
   "endereco_id": 1,
-  "data": "2023-08-10T12:00:10"
+  "data": "2023-06-29T19:30:53.258Z"
 }
 
 ### Buscar as compras
@@ -146,7 +149,7 @@ Content-Type: application/json
 {
   "usuario_id": 2,
   "endereco_id": 2,
-  "data": "2023-08-15T14:00:59"
+  "data": "2023-06-29T19:30:53.258Z"
 }
 
 ### Deletar compra

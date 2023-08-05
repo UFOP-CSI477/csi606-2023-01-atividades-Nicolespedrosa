@@ -18,7 +18,7 @@ model Estado {
 
   created_at DateTime @default(now())
   updated_at DateTime @default(now())
-  Cidade     Cidade[]
+  cidades    Cidade[]
 
   @@map("estados")
 }
@@ -33,8 +33,8 @@ model Cidade {
 
   created_at DateTime   @default(now())
   updated_at DateTime   @default(now())
-  Endereco   Endereco[]
-  usuarios      Usuario[]
+  enderecos  Endereco[]
+  usuarios   Usuario[]
 
   @@map("cidades")
 }
@@ -49,8 +49,8 @@ model Endereco {
   telefone    String
 
   cidade_id Int
-  cidade    Cidade @relation(fields: [cidade_id], references: [id])
-  compras Compras[]
+  cidades   Cidade    @relation(fields: [cidade_id], references: [id])
+  compras   Compras[]
 
   created_at DateTime @default(now())
   updated_at DateTime @default(now())
@@ -59,16 +59,16 @@ model Endereco {
 }
 
 model Compras {
-  id         Int      @id @default(autoincrement())
-  usuario_id  Int      
-  endereco_id   Int
-  data       DateTime
-  created_at DateTime @default(now())
-  updated_at DateTime @default(now())
+  id          Int      @id @default(autoincrement())
+  usuario_id  Int
+  endereco_id Int
+  data        DateTime
+  created_at  DateTime @default(now())
+  updated_at  DateTime @default(now())
 
-  endereco Endereco @relation(fields: [endereco_id], references: [id])
-  usuario       Usuario       @relation(fields: [usuario_id], references: [id])
-  produto       Produto[]
+  enderecos Endereco  @relation(fields: [endereco_id], references: [id])
+  usuarios  Usuario   @relation(fields: [usuario_id], references: [id])
+  produtos  Produto[]
 
   @@map("compras")
 }
@@ -76,28 +76,27 @@ model Compras {
 model Produto {
   id         Int      @id @default(autoincrement())
   compra_id  Int
-  usuario_id Int
-  endereco_id Int
-  data       DateTime
+  descricao Int
+  valor_unitario Int
   created_at DateTime @default(now())
   updated_at DateTime @default(now())
 
-  compras       Compras         @relation(fields: [compra_id], references: [id])
+  compras Compras @relation(fields: [compra_id], references: [id])
 
   @@map("produtos")
 }
 
 model Usuario {
-  id          Int      @id @default(autoincrement())
-  nome        String
-  rua         String
-  bairro      String
-  cidade_id   Int            
-  created_at  DateTime @default(now())
-  updated_at  DateTime @default(now())
+  id         Int      @id @default(autoincrement())
+  nome       String
+  rua        String
+  bairro     String
+  cidade_id  Int
+  created_at DateTime @default(now())
+  updated_at DateTime @default(now())
 
-  compras        Compras[]
-  cidade         Cidade        @relation(fields: [cidade_id], references: [id])
+  compras Compras[]
+  cidades Cidade    @relation(fields: [cidade_id], references: [id])
 
-  @@map("usuario")
+  @@map("usuarios")
 }

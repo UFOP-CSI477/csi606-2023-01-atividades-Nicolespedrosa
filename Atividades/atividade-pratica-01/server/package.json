@@ -11,12 +11,12 @@
   "author": "Nicole S Pedrosa",
   "license": "ISC",
   "dependencies": {
-    "@prisma/client": "^4.16.2",
+    "@prisma/client": "^5.1.1",
     "cors": "^2.8.5",
     "express": "^4.18.2"
   },
   "devDependencies": {
     "nodemon": "^1.14.9",
-    "prisma": "^4.16.1"
+    "prisma": "^5.1.1"
   }
 }
