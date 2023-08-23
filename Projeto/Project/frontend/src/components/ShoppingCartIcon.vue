@@ -50,7 +50,7 @@
           }).then((result) => {
             if (result.isConfirmed) {
               // Redirecionar para a rota de login
-              this.$router.push("/login");
+              this.$router.push("/register-user");
             }
           });
         } else {
