@@ -4,7 +4,11 @@ const pessoaController = require("../controllers/person.controller");
 const auth = require("../middlewares/auth.js");
 
 // ==> Rota responsável por Criar uma nova 'Pessoa': (POST): localhost:3000/api/pessoas
+<<<<<<< HEAD
 router.post("/pessoas", pessoaController.createPessoa);
+=======
+router.post("/pessoas", auth, pessoaController.createPessoa);
+>>>>>>> cf66af24a5dba8ec05f08a7487f8735907b49216
 
 // ==> Rota responsável por Buscar todas as 'Pessoas': (GET): localhost:3000/api/pessoas
 router.get("/pessoas", auth, pessoaController.getPessoas);

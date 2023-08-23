@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "compilerOptions": {
     "target": "es5",
     "module": "esnext",
@@ -17,3 +18,24 @@
     ]
   }
 }
+=======
+    "compilerOptions": {
+      "target": "es5",
+      "module": "esnext",
+      "baseUrl": "./",
+      "moduleResolution": "node",
+      "paths": {
+        "@/*": [
+          "src/*"
+        ]
+      },
+      "lib": [
+        "esnext",
+        "dom",
+        "dom.iterable",
+        "scripthost"
+      ]
+    }
+  }
+  
+>>>>>>> cf66af24a5dba8ec05f08a7487f8735907b49216
