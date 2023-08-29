@@ -4,17 +4,16 @@ const { Schema } = mongoose;
 
 const pessoaSchema = new Schema(
   {
-    nome: { type: String, required: true },
-    rua: { type: String, required: true },
-    numero: { type: Number, required: true },
-    complemento: { type: String, required: true },
-    documento: { type: String, required: true },
-    cep: { type: String, required: true },
+    nome: { type: String },
+    rua: { type: String },
+    numero: { type: Number },
+    complemento: { type: String },
+    documento: { type: String },
+    cep: { type: String },
     
     user: {
       type: Schema.Types.ObjectId,
       ref: "User",
-      required: true,
     },
   },
   {
