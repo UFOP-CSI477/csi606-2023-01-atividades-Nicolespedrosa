@@ -72,4 +72,8 @@ export default new Vuex.Store({
       return state.cartItems;
     },
   },
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> cf66af24a5dba8ec05f08a7487f8735907b49216
